@@ -20,27 +20,13 @@
             <section class="input-section">
                 <div class="input-box">
                     <input id="new-input" type="text" placeholder="Enter a new task">
-                    <p class="instruction display-no">Press "enter" to add task</p>
+                    <p class="instruction">Press "enter" to add task</p>
                 </div>
             </section>
 
             <section class="list-section">
                 <ul class="my-list in-block">
-                    <li class="list-item flex">
-                        Buy food
-                        <i class="fas fa-trash-alt display none"></i>
-                    </li>
-    
-                    <li class="list-item flex">
-                        Studying
-                        <i class="fas fa-trash-alt display none"></i>
-                    </li>
-    
-                    <li class="list-item flex">
-                        Send email
-                        <i class="fas fa-trash-alt display none"></i>
-                    </li>
-                
+                    <!-- SEE TEMPLATES IN THE BOTTOM -->
                 </ul>
             </section>
         </div>
@@ -54,9 +40,14 @@
 
 
     <!-- TEMPLATES -->
-    <li class="template list-item flex">
-        <i class="fas fa-trash-alt display-no"></i>
-    </li>
+    <div class="template">
+        <li class="list-item flex">
+            <button class="item-button display-no">
+                <i class="fas fa-trash-alt display-no"></i>
+            </button>
+        </li>
+    </div>
+
 
     <!-- SCRIPT -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>

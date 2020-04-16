@@ -23,12 +23,6 @@ li {
     list-style: none;
 }
 
-button {
-    font-family: 'Roboto', sans-serif;
-    outline: none;
-    cursor: pointer;
-}
-
 
 /* UTILITIES */
 .container {
@@ -118,25 +112,28 @@ main {
     }
 
         #new-input {
-            padding: 5px 15px;
+            padding: 4px 15px;
             border: 0;
             outline: 0;
-            border: 1px solid transparent;
+            border: 2px solid transparent;
         }
 
         #new-input:focus {
-            border-bottom: 1px solid yellow;
+            border-bottom: 2px solid yellow;
         }
 
         .input-box .instruction {
+            opacity:0;
             padding: 5px;
             font-style: oblique;
             font-size: 60%;
         }
 
-        .input-box:hover .instruction {
-            display: block;
+        #new-input:focus + .instruction {
+            opacity: 0.8;
+            transition: opacity 1s linear;
         }
+
 
     .list-section {
         margin-top: 45px;
@@ -154,10 +151,22 @@ main {
                 border-left: 5px solid yellow;
             }
 
-            .list-item i {
-                font-size: 70%;
-                cursor: pointer;
+            .list-item.completed {
+                color: gray;
+                text-decoration: line-through;
+                border-left: 5px solid darkred;
             }
+
+                .list-item button {
+                    font-family: 'Roboto', sans-serif;
+                    background: inherit;
+                    color: darkred;
+                    outline: none;
+                    cursor: pointer;
+                    border: 0;
+                    font-size: 100%;
+                }
+            
 
 /* FOOTER */
 footer {
