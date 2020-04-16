@@ -141,6 +141,7 @@ main {
 
         .my-list {
             width: 300px;
+            min-height: 220px;
         }
 
             .list-item {
@@ -166,11 +167,18 @@ main {
                     border: 0;
                     font-size: 100%;
                 }
-            
+        
+        .list-section .instruction {
+            margin-top: 25px;
+            padding: 5px;
+            font-style: oblique;
+            font-size: 60%;
+        }
+
 
 /* FOOTER */
 footer {
     font-style: italic;
     font-size: 5px;
     text-align: right;
-  }
+}

@@ -18,6 +18,7 @@ $(document).ready(function() {
      * MAIN SCRIPT
     ****************/
 
+    /* GLOBAL VARIABLE */
     const input = $('#new-input')
     const list = $('.my-list')
     const lits_item = $('.list-item')
@@ -27,15 +28,15 @@ $(document).ready(function() {
     const task_stored = ['Buy food', 'Studying', 'Send email']
 
 
-    item_button.click(function() {
-        $(this).parent().remove()
-    })
+    /* SCRIPT */
+    item_button.click(function() {$(this).parent().remove()})
 
 
-    lits_item.click(function() {
+    lits_item.dblclick(function() {
         $(this).toggleClass('completed')
         $(this).children(item_button).toggle()
     })
+
 
 
     for (task of task_stored) printList(task)
@@ -48,8 +49,5 @@ $(document).ready(function() {
                 $('.template .list-item').clone(true, true).prepend(new_content).appendTo(list)
             }
         }
-    }))
-
-
-    
+    }))   
 })
