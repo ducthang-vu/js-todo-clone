@@ -141,6 +141,7 @@ main {
 
         .my-list {
             width: 300px;
+            max-width: 90%;
             min-height: 220px;
         }
 
