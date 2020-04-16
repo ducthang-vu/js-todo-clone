@@ -1,0 +1,102 @@
+/*  GENERAL */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100vh;
+}
+
+a {
+    text-decoration: none;
+    background: inherit;
+    color: inherit;
+}
+
+li {
+    list-style: none;
+}
+
+button {
+    font-family: 'Roboto', sans-serif;
+    outline: none;
+    cursor: pointer;
+}
+
+
+/* UTILITIES */
+.container {
+    width: 1140px;
+    max-width: 90%;
+    padding: 10px;
+}
+
+.block {
+    display: block;
+}
+
+.display-none {
+    display: none;
+}
+
+.in-block {
+    display: inline-block;
+}
+
+.flex {
+    display: flex;
+}
+
+.relative {
+    position: relative;
+}
+
+.absolute {
+    position: absolute;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.central {
+    margin: auto;
+}
+
+.black {
+    background: #000;
+}
+
+.darkred-color {
+    color: darkred;
+}
+
+.green {
+    background: green;
+}
+
+.white-color {
+    color: white;
+}
+
+
+/* HEADER */
+header .container {
+    justify-content: center;
+    align-items: center;
+}
+
+header .container * {
+    margin: 0 20px;
+}
+
+#play-btn {
+    padding: 10px;
+    font-weight: 700px;
+}
+
