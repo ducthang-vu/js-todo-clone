@@ -45,9 +45,9 @@ $(document).ready(function() {
     $(document).keyup((function (e) { 
         if (e.which == 13 || e.keyCode == 13) {
             var new_content = input.val().trim()
-            if (new_content) {
-                $('.template .list-item').clone(true, true).prepend(new_content).appendTo(list)
-            }
+            if (new_content) printList(new_content)
+            input.val('') 
+            input.blur()
         }
     }))   
 })
